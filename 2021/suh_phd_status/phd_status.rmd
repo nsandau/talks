@@ -1,5 +1,5 @@
 ---
-title: "PhD Status - FIND PÅ TITEL"
+title: "Conflicting conclusions of meta-analyses comparing operative with non-operative treatments for proximal humerus fractures"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -24,6 +24,8 @@ style_duo(
   code_font_google = google_font("IBM Plex Mono")
 )
 
+# xaringan::inf_mr("phd_status.rmd")
+
 ## CITATIONS
 library(RefManageR)
 BibOptions(
@@ -39,12 +41,7 @@ bib <- ReadBib("/home/nicolai/OneDrive/Forskning/Zotero Library/zotero_lib.bib",
 
 # Documentation
 # https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/skeleton/skeleton.Rmd
-
-
-## TESTEER
 ```
-
-.center[# FIKS CITATIONS]
 
 .pull-left[
    ![mrknee](figures/du_2017_concl.png)
@@ -58,7 +55,8 @@ bib <- ReadBib("/home/nicolai/OneDrive/Forskning/Zotero Library/zotero_lib.bib",
 ---
 
 class: center middle
-### Low methodological quality and discordant conclusions of meta-analyses comparing operative and non-operative treatments for proximal humeral fractures
+### Low Methodological Quality and Discordant Conclusions of Meta-analyses Comparing Operative and Non-operative Treatments for Proximal Humerus Fractures
+
 #### Nicolai Sandau MD<sup>1</sup>, Peter Buxbom MD PhD<sup>1</sup>, Asbjørn Hróbjartsson MD PhD<sup>2</sup>,<br>Ian Harris MBBS PhD<sup>3</sup>, Stig Brorson MD PhD DMSc<sup>1</sup>
 
 <sup>1</sup>Centre for Evidence-Based Orthopedics, Department of Orthopedic Surgery, Zealand University Hospital
@@ -68,27 +66,62 @@ class: center middle
 <sup>3</sup>Whitlam Orthopaedic Research Centre, University of New South Wales
 
 ---
-class: middle, center
+class: middle center
 
 ![](figures/publ.svg)
 
 ---
-class: center, middle
+class: center middle
 
 ![](figures/stacked.svg)
 
 ---
 class: middle center
 
-![](figures/concl_bxplt.svg)
+![:scale 100%](figures/concl_hist.svg)
+
+---
+class: center middle
+### Protocols Reduce the Vibration of Effects for Meta-analyses Comparing Operative with Non-Operative Treatments for Proximal Humerus Fractures
+
+#### Nicolai Sandau MD<sup>1</sup>, Thomas Vedste Aagaard MSc<sup>1</sup>, Asbjørn Hróbjartsson MD PhD<sup>2</sup>,<br>Ian Harris MBBS PhD<sup>3</sup>, Stig Brorson MD PhD DMSc<sup>1</sup>
+
+<sup>1</sup>Centre for Evidence-Based Orthopedics, Department of Orthopedic Surgery, Zealand University Hospital
+
+<sup>2</sup>Centre for Evidence-Based Medicine Odense and Cochrane Denmark
+
+<sup>3</sup>Whitlam Orthopaedic Research Centre, University of New South Wales
+
+---
+class: middle center
+
+![](figures/decision_tree.svg)
+
+---
+class: center
+### Functional Outcome
+
+![:scale 45%](figures/voe_func.svg)
+
+---
+class: center
+### Quality of Life
+
+![:scale 45%](figures/voe_qol.svg)
+
+---
+class: center
+### Adverse Events
+
+![:scale 45%](figures/voe_bin.svg)
 
 ---
 class: center 
-### Using deep learning to diagnose knee injuries on magnetic resonance images: current potential and limitations
+### Using Deep Learning to Diagnose Knee Injuries on Magnetic Resonance Images: Current Potential and Limitations
 
 #### Nicolai Sandau MD, Stig Brorson MD PhD DMSc
 
-![mrknee](figures/mrknee.svg)
+![](figures/mrknee.svg)
 
 ---
 class: center middle

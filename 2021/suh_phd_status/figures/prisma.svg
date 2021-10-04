@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="807px" preserveAspectRatio="none" style="width:611px;height:807px;background:#FFFFFF;" version="1.1" viewBox="0 0 611 807" width="611px" zoomAndPan="magnify"><defs/><g><!--MD5=[311a50329dcd61d963fd5493378cd659]
+entity search--><rect fill="#FFFFFF" height="52.5938" style="stroke:#000000;stroke-width:1.5;" width="233" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="209" x="17" y="29.9951">Records obtained from search</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="88" y="46.292">(n = 1840)</text><!--MD5=[877d4baf125c90958c61f648c18389b1]
+entity other_sources--><rect fill="#FFFFFF" height="52.5938" style="stroke:#000000;stroke-width:1.5;" width="309" x="275" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="285" y="29.9951">Records identified through other sources</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="403" y="46.292">(n = 87)</text><!--MD5=[be4fac1881420c6f96826911c7242085]
+entity ta_screen--><rect fill="#FFFFFF" height="68.8906" style="stroke:#000000;stroke-width:1.5;" width="205" x="174" y="120"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="210.5" y="142.9951">Records screened,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="184" y="159.292">after removal of duplicates</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="239" y="175.5889">(n = 1326)</text><!--MD5=[0544c08f1b18a88715e2b5e5e771eaaf]
+entity ta_excluded--><rect fill="#FFFFFF" height="52.5938" style="stroke:#000000;stroke-width:1.5;" width="145" x="414" y="128"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="424" y="150.9951">Records excluded</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="449" y="167.292">(n = 1268)</text><!--MD5=[c973043440ecda7cfe4ee97979a24f57]
+entity ft_screen--><rect fill="#FFFFFF" height="68.8906" style="stroke:#000000;stroke-width:1.5;" width="157" x="198" y="249"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="208" y="271.9951">Full-texts assessed</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="237" y="288.292">for eligibility</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="250" y="304.5889">(n = 58)</text><!--MD5=[1d8ec561f0c3ae56c4d8e89287b4f10c]
+entity ft_excluded--><rect fill="#FFFFFF" height="68.8906" style="stroke:#000000;stroke-width:1.5;" width="157" x="390" y="249"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="400" y="271.9951">Full-texts excluded,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="424.5" y="288.292">with reasons</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="442" y="304.5889">(n = 35)</text><!--MD5=[00d9e617ec10e8f6da2f37eb4a87dc79]
+entity ft_included--><rect fill="#FFFFFF" height="52.5938" style="stroke:#000000;stroke-width:1.5;" width="228" x="162.5" y="378"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="172.5" y="400.9951">Index meta-analyses included</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="250" y="417.292">(n = 23)</text><!--MD5=[87cfa17dd03e6d8c93d465352aff2ac9]
+entity trial_search--><rect fill="#FFFFFF" height="68.8906" style="stroke:#000000;stroke-width:1.5;" width="308" x="122.5" y="491"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="132.5" y="513.9951">Studies identified in index meta-analyses,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="186" y="530.292">after removal of duplicates</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="243.5" y="546.5889">(n = 103)</text><!--MD5=[5187d12d5a77f8cf8136931dc7507280]
+entity trial_excluded--><rect fill="#FFFFFF" height="52.5938" style="stroke:#000000;stroke-width:1.5;" width="139" x="466" y="499"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="476" y="521.9951">Studies excluded</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="507" y="538.292">(n = 73)</text><!--MD5=[57054aab6d76e17de492b5282d29ac57]
+entity trial_ftscreen--><rect fill="#FFFFFF" height="68.8906" style="stroke:#000000;stroke-width:1.5;" width="157" x="198" y="620"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="208" y="642.9951">Full-texts assessed</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="239" y="659.292">for eligibility</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="250" y="675.5889">(n = 30)</text><!--MD5=[74ba44b2b4972502b21dd23f9ca33fe0]
+entity trial_ftexcluded--><rect fill="#FFFFFF" height="68.8906" style="stroke:#000000;stroke-width:1.5;" width="157" x="390" y="620"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="400" y="642.9951">Full-texts excluded,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="426.5" y="659.292">with reasons</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="446.5" y="675.5889">(n = 4)</text><!--MD5=[764794c5a7df0783439fdbdd6824bbb5]
+entity trial_included--><rect fill="#FFFFFF" height="52.5938" style="stroke:#000000;stroke-width:1.5;" width="139" x="207" y="749"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="217" y="771.9951">Studies included</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="250" y="788.292">(n = 26)</text><!--MD5=[9ee5622bc68c2154cf59665d74fb7d16]
+link search to ta_screen--><path d="M156.32,60.03 C177.57,76.56 205.58,98.34 229.21,116.72 " fill="none" id="search-to-ta_screen" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="233.27,119.88,228.6281,111.1936,229.3255,116.8073,223.7119,117.5048,233.27,119.88" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[fa54d0d81b288feac205786d8488718c]
+link other_sources to ta_screen--><path d="M396.68,60.03 C375.43,76.56 347.42,98.34 323.79,116.72 " fill="none" id="other_sources-to-ta_screen" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="319.73,119.88,329.2881,117.5048,323.6745,116.8073,324.3719,111.1936,319.73,119.88" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[7d3b779ec461501eaafb5162da8eec31]
+link ta_screen to ta_excluded--><path d="M379.04,154.5 C388.93,154.5 398.82,154.5 408.71,154.5 " fill="none" id="ta_screen-to-ta_excluded" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="413.88,154.5,404.88,150.5,408.88,154.5,404.88,158.5,413.88,154.5" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[59b4ea2701f8f6d82d41c263113abb82]
+link ta_screen to ft_screen--><path d="M276.5,189.2 C276.5,205.85 276.5,226.03 276.5,243.36 " fill="none" id="ta_screen-to-ft_screen" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="276.5,248.64,280.5,239.64,276.5,243.64,272.5,239.64,276.5,248.64" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[5f2fbb5df95c41a9becbb5f09be46e80]
+link ft_screen to ft_excluded--><path d="M355.25,283.5 C365.04,283.5 374.84,283.5 384.63,283.5 " fill="none" id="ft_screen-to-ft_excluded" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="389.76,283.5,380.76,279.5,384.76,283.5,380.76,287.5,389.76,283.5" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[25034b673412355d92087180352a1f31]
+link ft_screen to ft_included--><path d="M276.5,318.28 C276.5,335.47 276.5,356.2 276.5,372.91 " fill="none" id="ft_screen-to-ft_included" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="276.5,377.96,280.5,368.96,276.5,372.96,272.5,368.96,276.5,377.96" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[db8dd2c64dc51be61ec43055ca0cacaa]
+link ft_included to trial_search--><path d="M276.5,431.03 C276.5,446.87 276.5,467.55 276.5,485.43 " fill="none" id="ft_included-to-trial_search" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="276.5,490.88,280.5,481.88,276.5,485.88,272.5,481.88,276.5,490.88" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[a81aebbe28ee8c96db80857658d9056d]
+link trial_search to trial_excluded--><path d="M430.53,525.5 C440.54,525.5 450.55,525.5 460.56,525.5 " fill="none" id="trial_search-to-trial_excluded" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="465.8,525.5,456.8,521.5,460.8,525.5,456.8,529.5,465.8,525.5" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[dc7551f1d354d919346a61e2fbcea511]
+link trial_search to trial_ftscreen--><path d="M276.5,560.2 C276.5,576.85 276.5,597.03 276.5,614.36 " fill="none" id="trial_search-to-trial_ftscreen" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="276.5,619.64,280.5,610.64,276.5,614.64,272.5,610.64,276.5,619.64" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[7bab993b71c11bb5360d8db425273583]
+link trial_ftscreen to trial_ftexcluded--><path d="M355.25,654.5 C365.04,654.5 374.84,654.5 384.63,654.5 " fill="none" id="trial_ftscreen-to-trial_ftexcluded" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="389.76,654.5,380.76,650.5,384.76,654.5,380.76,658.5,389.76,654.5" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[23bc13ee98dbc853a1cb5f7fb0b5cd55]
+link trial_ftscreen to trial_included--><path d="M276.5,689.28 C276.5,706.47 276.5,727.2 276.5,743.91 " fill="none" id="trial_ftscreen-to-trial_included" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="276.5,748.96,280.5,739.96,276.5,743.96,272.5,739.96,276.5,748.96" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[a57053eb11faa142bdc09751f8cf371b]
+@startuml
+skinparam defaultTextAlignment center
+skinparam shadowing false
+skinparam ArrowColor Black
+skinparam BackgroundColor White
+skinparam rectangle {
+	BackgroundColor White
+	FontColor Black
+}
+scale max 1024*1024
+
+
+rectangle "Records obtained from search \n (n = 1840)" as search
+rectangle "Records identified through other sources \n (n = 87)" as other_sources 
+rectangle "Records screened,\nafter removal of duplicates \n(n = 1326)" as ta_screen
+rectangle "Records excluded\n(n = 1268)" as ta_excluded
+rectangle "Full-texts assessed \n for eligibility \n (n = 58)" as ft_screen
+rectangle "Full-texts excluded, \n with reasons \n (n = 35)" as ft_excluded
+rectangle "Index meta-analyses included \n (n = 23)" as ft_included
+rectangle "Studies identified in index meta-analyses, \nafter removal of duplicates\n(n = 103)" as trial_search
+rectangle "Studies excluded\n(n = 73)" as trial_excluded
+rectangle "Full-texts assessed \n for eligibility\n (n = 30)" as trial_ftscreen
+rectangle "Full-texts excluded, \n with reasons\n (n = 4)" as trial_ftexcluded
+rectangle "Studies included \n (n = 26)" as trial_included
+
+search - -> ta_screen
+other_sources - -> ta_screen
+ta_screen -> ta_excluded
+ta_screen - -> ft_screen
+ft_screen -> ft_excluded
+ft_screen - -> ft_included
+ft_included - -> trial_search
+trial_search -> trial_excluded
+trial_search - -> trial_ftscreen
+trial_ftscreen -> trial_ftexcluded
+trial_ftscreen - -> trial_included
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 10:20:59 CEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: DK
+--></g></svg>
