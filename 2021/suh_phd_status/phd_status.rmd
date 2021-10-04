@@ -1,5 +1,5 @@
 ---
-title: "Conflicting conclusions of meta-analyses comparing operative with non-operative treatments for proximal humerus fractures"
+title: "Conflicting Conclusions of meta-analyses Comparing Operative With Non-operative Treatments for Proximal Humerus Fractures"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
