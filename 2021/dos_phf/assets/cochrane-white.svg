@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg872"
+   width="251.85481"
+   height="78.076118"
+   viewBox="0 0 251.85481 78.076119"
+   sodipodi:docname="cochrane-white.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview880"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="3.5711404"
+     inkscape:cx="140.85137"
+     inkscape:cy="71.685785"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g878" />
+  <defs
+     id="defs876" />
+  <g
+     id="g878"
+     transform="translate(-42.335541,24.857264)">
+    <g
+       id="g18342"
+       transform="matrix(1.0241917,0,0,1.0241917,1.3976779,-40.775419)"
+       style="stroke-width:0.97638">
+      <path
+         fill="#002d64"
+         d="m 72.57374,17.698019 c -18.357234,2.152354 -32.602841,17.750465 -32.602841,36.686535 0,18.933558 14.245607,34.532144 32.602841,36.68283 V 78.807635 C 60.941584,76.754418 52.104601,66.603176 52.104601,54.382092 c 0,-12.22192 8.836983,-22.371059 20.469139,-24.426816 z m 8.688814,0 v 12.257257 c 11.63132,2.056594 20.470376,12.205757 20.470376,24.426816 0,12.220224 -8.839056,22.372706 -20.470376,24.426789 v 12.259718 c 18.356391,-2.15149 32.602836,-17.750487 32.602836,-36.684045 0,-18.935209 -14.246445,-34.533345 -32.602836,-36.686535 z"
+         id="path1976"
+         style="fill:#fdfbff;fill-opacity:1;stroke-width:0.976375" />
+      <path
+         fill="#962d91"
+         d="m 74.907357,36.168717 h -3.466292 v -2.174185 h 3.466292 z m 3.095806,16.543438 v 3.341952 h 2.144797 v 2.170865 h -2.144797 v 8.85725 h 2.518643 v 2.171673 H 78.003163 V 91.306772 H 75.833164 V 69.253895 h -2.145645 v -2.171673 h 2.145645 v -8.85725 H 63.954853 V 56.054107 H 75.833164 V 52.712155 H 69.94399 v -2.172511 h 5.889174 V 47.19683 H 65.452768 V 45.024319 H 75.833164 V 41.682367 H 63.954853 V 39.510692 H 75.833164 V 17.45865 h 2.169999 v 22.052042 h 1.77095 v 2.171675 h -1.77095 v 8.857277 h 5.89001 v 2.172511 z m -8.296924,21.181702 2.369108,2.369102 2.36659,-2.369102 -2.36659,-2.366598 z m 4.07873,-10.154424 H 62.456934 v -2.171678 h 11.328035 z"
+         id="path1978"
+         style="fill:#fdfbff;fill-opacity:1;stroke-width:0.976375" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:42.6667px;line-height:47.2381px;font-family:sans-serif;letter-spacing:-2px;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="132.19067"
+       y="5.0520911"
+       id="text10227"><tspan
+         sodipodi:role="line"
+         id="tspan10225"
+         x="132.19067"
+         y="5.0520911"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.6667px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Cochrane</tspan><tspan
+         sodipodi:role="line"
+         x="132.19067"
+         y="52.706856"
+         id="tspan10229"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.6667px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Denmark</tspan></text>
+  </g>
+</svg>

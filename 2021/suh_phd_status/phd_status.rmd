@@ -44,11 +44,11 @@ bib <- ReadBib("/home/nicolai/OneDrive/Forskning/Zotero Library/zotero_lib.bib",
 ```
 
 .pull-left[
-   ![mrknee](figures/du_2017_concl.png)
+   ![](figures/du_2017_concl.png)
    `r Citet(bib, "duInterventionsTreating4part2017")`]
   
   .pull-right[
-    ![mrknee](figures/beks_concl.png)
+    ![](figures/beks_concl.png)
     `r Citet(bib, "beksOperativeNonoperativeTreatment2018")`
   ]
 
@@ -114,19 +114,6 @@ class: center
 ### Adverse Events
 
 ![:scale 45%](figures/voe_bin.svg)
-
----
-class: center 
-### Using Deep Learning to Diagnose Knee Injuries on Magnetic Resonance Images: Current Potential and Limitations
-
-#### Nicolai Sandau MD, Stig Brorson MD PhD DMSc
-
-![](figures/mrknee.svg)
-
----
-class: center middle
-
-![:scale 60%](figures/gcsrt.png)
 
 ---
 # References
