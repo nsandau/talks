@@ -71,22 +71,8 @@ Vi ville med dette projekt derfor undersøge om det ved hjælp af disse fremskri
 ![:scale 50%](figures/coronal_1_img.png)]]
 
 .pull-right[.center[
-<div class="math">
-\[
-\begin{array}{cc} &
-\\
-&
-\left(
-\begin{array}{ccc}
-1 & 203 & 130 & 26 & 62 & 43 \\
-206& 51 & 120 & 40 & 18 & 5 \\
-0 & 53 & 231 & 102 & 158 & 191 \\
-31 & 41 & 99 & 156 & 224 & 139 \\
-209 & 79 & 153 & 156 & 168 & 89 \\
-72 & 132 & 83 & 65 & 134 & 230 \end{array}
-\right)\end{array}
-\]
-</div>]]
+  <br>
+![:scale 70%](figures/matrix.png)]]
 
 ???
 Vi benyttede det samme dataset som de brugte i artiklen fra 2018 som består af i alt 1250 cases.
