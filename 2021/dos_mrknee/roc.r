@@ -2,7 +2,7 @@ library(tidymodels)
 library(tidyverse)
 library(here)
 
-
+source("theme.r")
 
 ### LOAD DATA
 
@@ -29,7 +29,7 @@ probas <- read.csv("data/all_valids_preds.csv",
 
 preds <- probas %>%
     mutate(
-        across(.fns = ~ if_else(.x >= 0.5, 1, 0)),
+        across(.fns = ~ if_else(.x > 0.53, 1, 0)),
         across(.fns = as.factor)
     )
 
@@ -39,9 +39,15 @@ radiologists_perf <-
         "abn", 0.844, 0.905,
         "acl", 0.933, 0.906,
         "men", 0.882, 0.820
-    )
+    ) %>% mutate(name = "Radiologists")
 
-
+stanford_perf <-
+    tribble(
+        ~path, ~spec, ~sens,
+        "abn", 0.714, 0.879,
+        "acl", 0.968, 0.759,
+        "men", 0.741, 0.710
+    ) %>% mutate(name = "Bien et al.")
 
 
 # dfs <- cols %>% map(
@@ -104,34 +110,34 @@ roc_vals <- cols %>%
         event_level = "second"
     ))
 
-model_perf <- tibble(path = sens$path, sens = sens$PointEst, spec = spec$PointEst)
+model_perf <- tibble(path = sens$path, sens = sens$PointEst, spec = spec$PointEst) %>% mutate(name = "Model")
+
+
+performances <- model_perf %>%
+    bind_rows(stanford_perf) %>%
+    bind_rows(radiologists_perf)
+
 
 roc_plts <- roc_vals %>%
     map(~ autoplot(.x)) %>%
     map2(
         .x = ., .y = cols,
         ~ .x + geom_point(
-            data = radiologists_perf %>% filter(path == .y),
-            aes(x = 1 - spec, y = sens),
-            color = "red",
+            data = performances %>% filter(path == .y),
+            aes(x = 1 - spec, y = sens, color = name, shape = name),
             size = 3
-        )
-    ) %>%
-    map2(
-        .x = ., .y = cols,
-        ~ .x + geom_point(
-            data = model_perf %>% filter(path == .y),
-            aes(x = 1 - spec, y = sens),
-            color = "green",
-            size = 3
-        )
+        ) + annotate("text", x = 0.5, y = 1.03, label = str_c(
+            "AUC: ", round(aucs[[.y]][1], 2)
+        ), size = 8)
     ) %>%
     map(~ .x + labs(
         x = "False Positive Rate (1- specificity)",
         y = "True Positive Rate (Sensitivity)"
-    )) %>%
+    ) +
+        theme(plot.margin = margin(b = 0.8, t = 0.8, r = 0.8, l = 0.8), text = element_text(color = "black", size = 18), legend.title = element_blank(), panel.grid.minor = element_blank()) +
+        scale_y_continuous(breaks = seq(0, 1, by = 0.1), labels = seq(0, 1, by = 0.1)) +
+        scale_x_continuous(breaks = seq(0, 1, by = 0.1), labels = seq(0, 1, by = 0.1))) %>%
     set_names(cols)
 
 
-
-cols %>% map(~ roc_plts[[.x]] %>% ggsave(filename = str_c("roc_", .x, ".svg"), plot = ., path = "figures", device = "svg"))
+cols %>% map(~ roc_plts[[.x]] %>% ggsave(filename = str_c("roc_", .x, ".svg"), plot = ., path = "figures", device = "svg", width = 25, height = 20, units = "cm"))

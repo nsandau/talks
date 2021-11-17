@@ -41,6 +41,8 @@ background-color: #0148A4
 ### .white[Centre for Evidence-Based Orthopedics, Dept. of Orthopedic Surgery,&lt;br&gt;Zealand University Hospital]
 ]
 
+???
+Først vil jeg gerne sige tak for muligheden for at komme og fortælle om vores projekt hvor vi har udviklet en deep learning model de havde udviklet til at diagnosticere ACL og menisk skader ud fra MR scanninger. 
 ---
 
 # Background
@@ -52,11 +54,12 @@ background-color: #0148A4
 ]
 
 ???
-In 2018 researchers from stanford released a paper in which they reported their findings on using deep learning to diagnose knee injuries. 
+Baggrunden for dette projekt kommer fra en artikel udgivet i 2018 hvor en gruppe fra Stanford præsenterede deres resultater for en deep learning model der kunne diagnosticere ACL og menisk skader ud fra MR billeder. 
 
-However, the findings were not quite at human performance. 
+I artiklen sammenlignede de deres model med radiologer, men de måtte  konkludere at deres model ikke helt var på niveau med radiologernes.  
 
-As deep learning is a rapidly developing field and new techniques are published almost daily we wanted to investigate if these new advances in deep learning could help achieve human level performance.   
+Deep learning feltet har de seneste år oplevet en massiv teknologisk udvikling. 
+Vi ville med dette projekt derfor undersøge om det ved hjælp af disse fremskridt var muligt at opnå resultater på niveau med radiologer. 
 
 ---
 
@@ -65,67 +68,135 @@ As deep learning is a rapidly developing field and new techniques are published 
 - 1250 cases 
   - Training: 1130 
   - Validation: 120
-- Labels with presence of meniscus and/or acl tear
 
-.center[![:scale 80%](figures/img_panel.png)]
+.pull-left[
+.center[
+![:scale 50%](figures/coronal_1_img.png)]]
+
+.pull-right[.center[
+&lt;div class="math"&gt;
+\[
+\begin{array}{cc} &amp;
+\\
+&amp;
+\left(
+\begin{array}{ccc}
+1 &amp; 203 &amp; 130 &amp; 26 &amp; 62 &amp; 43 \\
+206&amp; 51 &amp; 120 &amp; 40 &amp; 18 &amp; 5 \\
+0 &amp; 53 &amp; 231 &amp; 102 &amp; 158 &amp; 191 \\
+31 &amp; 41 &amp; 99 &amp; 156 &amp; 224 &amp; 139 \\
+209 &amp; 79 &amp; 153 &amp; 156 &amp; 168 &amp; 89 \\
+72 &amp; 132 &amp; 83 &amp; 65 &amp; 134 &amp; 230 \end{array}
+\right)\end{array}
+\]
+&lt;/div&gt;]]
 
 ???
-Kunne lave en illustration af hvordan billederne bare er matrix med numre img -&gt; matrix 
-og illusterere at hver serie er = 256*256*30 tal 
+Vi benyttede det samme dataset som de brugte i artiklen fra 2018 som består af i alt 1250 cases.
+De 1250 cases er delt op i et trænings sæt og et validerings. 
+Valideringssættet benyttes til at teste modellen på et sæt billeder den aldrig har set før. 
+
+Hver case var klassificeret med diagnose af meniskus og/eller acl skader. 
+
+Som man kan se nederst på sliden så er billederne blot en matrix af tal. 
+Og grundlæggende så forsøger en deep learning model at finde en transformation af de her tal på en sådan måde at den kan skelne mellem billeder med en skade fra dem uden. 
+
+Så der er lidt forsimplet to måder man kan forbedre sådan en model: 
+1. ved at optimere forarbejdelsen af den data som modellen trænes på
+2. optimere de transformationer som modellen kan lære, også kaldet arkitekturen af modellen
 
 ---
-# Methods: Training the model
+# Methods: Deep learning model
 
-* Efficientnet B1 pretrained on imagenet dataset ( `\(\approx\)` 14.000.000 images)
+&lt;br&gt;
 
 .center[
 .middle[
-  ![:scale 70%](figures/training.svg)
+  ![:scale 65%](figures/training.svg)
 ]]
 
+???
+
+Det skal gøres for hvert plan individuelt, således at hver model er trænet i isolation. 
+Til sidst kombinerer man så sandsynlighederne fra hvert plan ved hjælp af en simpel logistisk regression og man opnår derefter en vægtet sandsynlighed for at den her patient har en diagnose.  
+
+Det her gjorde vi så for både ACL og for menisk. 
 ---
 
 # Results: ACL 
-.center[
-.middle[
-![](figures/roc_acl.svg)
-]
-]
+&lt;br&gt;
+
+.center[.middle[
+![:scale 55%](figures/roc_acl.svg)
+]]
+
+???
+Idet modellen giver en sandsynlighed for en given diagnose kan man anvende en såkaldt reciever operator curve hvor vi har den sande positiv rate på y-aksen og den falske positiv rate på x-aksen.
+
+Ved at justere hvor sikker modellen skal være på en diagnose kan man justere på de to parametre som illustreret ved den sorte streg. Dvs jo mere sikker modellen skal være nedsætter vi den falske positive rate men det er på bekostning af den sande positive rate. 
+
+Et overordnet mål for præstationen er så arealet under kurven hvor det maksimale er 1, svarende til at man havde en sand positiv rate på 1 og en falsk positiv rate på 0.
+
+Når man beregner sensitivitet og specificity er cut-off normalt 0.5 som for vores model er illustreret med den grønne plet.   
+
+Til sammenligning kan man se modellen fra den førnævnte artikel svt det røde punkt, samt radiologernes resultater fra samme artikel i det blå punkt. 
 
 ---
 # Results: Meniscus
-.center[
-.middle[
-![](figures/roc_men.svg)
-]
-]
+&lt;br&gt;
 
+.center[.middle[
+![:scale 55%](figures/roc_men.svg)
+]]
+
+???
+For meniskskader kan vi se at modellen igen er sammenlignelig med radiologernes diagnosticeringsevne. 
 ---
 
 # Results: GradCAM
 
 &lt;br&gt;
-.center[
-  .middle[
-    ![](figures/gradcam.png)
+
+.center[.middle[
+    ![:scale 50%](figures/gradcam.png)
   ]
 ]
 
 ???
+Når modellen træner kan man trække de tal ud som den bruger til at justere sine parametre og overlægge dem som et heatmap på de billeder som den har trænet på for at få et indblik i hvilke regioner modellen tillæger størst vægt og som det kan ses ser det ud til at den har en god ide om hvilke områder der adskiller patienterne med og uden skader. 
+
 Labels: no acl tear or meniscus tear
 ---
 
-# Potential and limitations
-* Generalizability 
-  * patient population 
-  * scanners
-  * other pathologies
-* More high quality data (intra-operatively verified)
+# Limitations
+.Large[
+* Lack of generalizability 
+  * Patient population 
+  * Different scanners
+  * Other pathologies
+* Potential solution: More high quality data
+]
+???
+Som med de fleste andre statistiske modeller, er der dog nogle begrænsninger man skal have in mente hvoraf den største er i forhold til til generaliserbarheden 
+Idet modellen kun  kender til de cases den har trænet på skal man sikre sig at de patienter man træner på er fra samme population som den man vil anvende den på. 
+Som eksempel var det her dataset fra et amerikansk hospital hvor man kan se at mange har hæmartron sandsynligvis fordi de bliver scannet umiddelbart efter skadens indtræden. 
+Modellen kan derfor formentlig ikke direkte overføres her til Danmark, da patienterne formentlig bliver scannet på et senere tidspunkt og færre måske derfor har hæmartron.
+Dette gælder også i forhold til anvendelsen af forskellige scannere eller hvis patienterne har andre patologier udover dem som modellen er trænet på.
+
+En potentiel løsning er mere data af høj kvalitet. 
+I det her tilfælde med menisk og acl skader er der især behov for intra-operativt verificerede diagnoser, da som vi kunne se, også radiologer tager fejl når de vurderer MR scanninger. 
+Og modellen kan kun være så god som den data den har lært fra.  
 
 ---
 # Conclusions
 
-Deep learning has great potential to aid in the diagnosis of meniscus and ACL injuries on MRI.
+.Large[
+* Deep learning methods has the potential to aid radiologists and orthopedic surgeons in the diagnosis of meniscus and ACL injuries on MRI. 
+* More high quality data is needed to improve generalizability.
+]
+
+???
+Deep learning modeller har potentiale til at kunne bidrage i diagnosticeringen af menisk og acl skader men der er behov for mere højkvalitets data for at sikre generaliserbarheden inden vi kan se det implementeret i klinisk praksis. 
 
 ---
 class: sydney-blue
@@ -140,30 +211,15 @@ Nicolai Sandau, MD &lt;br&gt;
 Centre for Evidence-Based Orthopedics, &lt;br&gt; 
 Dept. of Orthopedic Surgery, &lt;br&gt;
 Zealand University Hospital, &lt;br&gt;
-Denmark &lt;br&gt; &lt;br&gt;
-
+Denmark &lt;br&gt;
 &lt;a href="mailto:nicsa@regionsjaelland.dk"&gt;
 .white[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg> nicsa@regionsjaelland.dk]
-&lt;/a&gt;
-
-&lt;a href="https://www.researchgate.net/profile/Nicolai_Sandau"&gt;
-.white[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg> researchgate.net/profile/Nicolai_Sandau]
 &lt;/a&gt;
 
 &lt;br&gt;&lt;br&gt;
 
 ]]
 
----
-
-## References
-
-
-```
-## You haven't cited any references in this bibliography yet.
-```
-
-NULL
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
