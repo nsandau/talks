@@ -19,17 +19,6 @@ output:
 
 ```{r, load_refs, echo=FALSE, cache=FALSE, message=FALSE}
 # xaringan::inf_mr("index.rmd")
-library(RefManageR)
-BibOptions(
-  check.entries = FALSE,
-  bib.style = "authoryear",
-  cite.style = "authoryear",
-  style = "markdown",
-  hyperlink = FALSE,
-  dashed = FALSE,
-  max.names = 1
-)
-bib <- ReadBib("/home/nicolai/OneDrive/Forskning/Zotero Library/zotero_lib.bib", check = FALSE)
 ```
 
 class: title-slide
@@ -53,11 +42,11 @@ background-color: #0148A4
 .middle[
 .pull-left[
    ![](figures/du_2017_concl.png)
-   `r Citet(bib, "duInterventionsTreating4part2017")`]
+   Du et al. (2017)]
   
   .pull-right[
     ![](figures/beks_concl.png)
-    `r Citet(bib, "beksOperativeNonoperativeTreatment2018")`
+    Beks et al. (2018)
   ]
 ]
 
@@ -65,11 +54,8 @@ background-color: #0148A4
 # Methods
 .large[
 - Searched EMBASE, PubMed, The Cochrane Library, and Web of Science for meta-analyses comparing non-operative with operative treatments
-- Assessed methodological quality using AMSTAR2
-- Scored the reported conclusions for three outcome domains: <br> functional outcome, quality of life and adverse events. 
-  - Scale ranged from 1-6
-      - 1: Highly favoring non-operative intervention
-      - 6: Highly favoring operative intervention
+- Methodological quality assessed using AMSTAR2
+- Conclusions scored for three outcome domains: <br> functional outcome, quality of life and adverse events. 
 ]
 ---
 
@@ -78,13 +64,23 @@ background-color: #0148A4
 .middle[
 ![:scale 50%](figures/publ.svg)
 ]]
----
 
-# Results: Methodological Quality
-.center[
+---
+# Results
+
+.pull-left[.center[
 .middle[
-![](figures/stacked.svg)
-]]
+![:scale 85%](figures/mao.png)
+
+]]Accepted: November 8, 2013]
+
+.pull-right[.center[
+.middle[
+![:scale 78%](figures/jia.png)
+
+]]Accepted: November 25, 2013]
+
+
 ---
 
 # Results: Reported Conclusions
@@ -94,15 +90,22 @@ background-color: #0148A4
 ]]
 
 ---
+
+# Results: Methodological Quality
+.center[
+.middle[
+![](figures/stacked.svg)
+]]
+---
 # Conclusions
 <br> <br>
 .large[
-* The methodological quality of meta-analyses comparing operative with non-operative treatments for proximal humerus fractures is critically low and the reported conclusions are discordant. 
-* It was not possible to determine a cause for the discordant conclusions.
+* The methodological quality is critically low and the reported conclusions are discordant. 
+* It was not possible to determine the association between methodological quality and reported conclusions.
+* Discordant conclusions may be due to lack of pre-defined protocols
 ]
 ---
 class: sydney-blue
-background-image: url(assets/USydLogo-white.svg)
 background-size: 260px
 background-position: 5% 95%
 
@@ -113,24 +116,12 @@ Nicolai Sandau, MD <br>
 Centre for Evidence-Based Orthopedics, <br> 
 Dept. of Orthopedic Surgery, <br>
 Zealand University Hospital, <br>
-Denmark <br> <br>
-
+Denmark <br> 
 <a href="mailto:nicsa@regionsjaelland.dk">
 .white[`r fontawesome::fa("paper-plane")` nicsa@regionsjaelland.dk]
-</a>
-
-<a href="https://www.researchgate.net/profile/Nicolai_Sandau">
-.white[`r fontawesome::fa("link")` researchgate.net/profile/Nicolai_Sandau]
 </a>
 
 <br><br>
 
 ]]
 
----
-
-## References
-
-```{r refs, echo=FALSE, results="asis"}
-PrintBibliography(bib)
-```
