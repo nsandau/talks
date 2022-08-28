@@ -1,0 +1,203 @@
+---
+Title: "Presentation"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/fonts.css", "assets/custom.css"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: false # show a title slide with YAML information
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"
+    nature:
+      beforeInit: ["assets/img_scale.js", "assets/remark-zoom.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+---
+
+```{r, load_refs, echo=FALSE, cache=FALSE, message=FALSE}
+# xaringan::inf_mr("index.rmd")
+```
+
+class: title-slide
+background-image: url("assets/ucph-logo-white-en.svg"), url("assets/suh-logo-white.png"), url("figures/forest_plot_example.png")
+background-position: 8% 90%, 32% 89%, 100% 50%
+background-size: 180px, 180px, 50% 100%
+background-color: #0148A4
+
+.pull-left[
+# .text-shadow[.white[Meta-analyser: Muligheder og begrænsninger]]
+
+
+<br><br><br>
+
+### .white[Nicolai Sandau]
+
+### .white[Centre for Evidence-Based Orthopedics]
+]
+
+---
+# Muligheder
+<br>
+
+* .Large[Kombinere resultater fra flere studier]
+* .Large[Øget sample size]
+  * .Large[Øget power] 
+  * .Large[Øget precision af effekt estimat]
+
+---
+
+.center[.middle[
+![:scale 75%](figures/ma_success_story.png)
+]]
+
+---
+
+# Hvordan beregnes en meta-analyse?
+
+* .Large[Vægtet gennemsnit af resultater]
+<br> <br>  
+
+
+$$estimat = \frac{resultat1 \times w1 + resultat2 \times w2}{w1 + w2} $$
+
+
+* .Large[Vægt beregnes ved inverse-variance]
+<br>
+$$w = \frac{1}{SE^2}$$ 
+
+
+---
+
+
+# Udfordringer og begrænsninger
+
+<br>
+<br>
+
+.pull-left[
+   ![](figures/du_2017_concl.png)]
+  
+  .pull-right[
+    ![](figures/beks_concl.png)
+  ]
+
+
+---
+# Publicerede meta-analyser
+.center[.middle[
+![:scale 45%](figures/s1_publ.png)
+]]
+
+---
+# Rapporterede konklusioner
+
+.center[.middle[
+![:scale 50%](figures/s1_concl.png)
+]]
+
+---
+
+# Udfordringer og begrænsninger
+
+<br>
+
+* .Large[Risk of bias]
+* .Large[Heterogenitet]
+* .Large[Analytisk frihed]
+
+---
+
+# Risk of bias 
+
+.center[![:scale 30%](figures/rob.png)]
+
+
+---
+
+# Heterogenitet
+* .Large[Sammenligneligheden af de inkluderede studier]
+  * Forskelle i patienter, interventioner, outcomes, kirurgisk erfaring, genoptræning osv. ?
+  * Forskelle i studietyper (RCT vs observationelle studier)
+* .Large[Kan estimeres og til dels korrigeres statistisk]
+
+.center[.middle[
+![:scale 65%](figures/table1.png)
+]
+]
+
+
+---
+# Analytisk frihed
+
+.pull-left[
+* .large[Hvilke patienter?]
+  * Alder?
+  * Frakturtype?
+* .large[Hvilke interventioner og comparators?]
+  * ORIF vs non-operativt?
+  * ORIF + artroplastik vs non-operativ?
+]
+
+.pull-right[
+* .large[Hvilke outcomes?]
+  * Funktionelt outcome? 
+  * Quality of life?
+  * Adverse events?
+  * Hvor lang tids follow-up?
+* .large[Hvilke type af studier?]
+  * Kun RCTs?
+  * RCTs + observationelle?
+]
+---
+
+<br>
+
+.center[
+![:scale 50%](figures/voe.png)
+]
+
+---
+
+<br>
+
+.center[
+![:scale 85%](figures/voe_func.png)
+]
+
+---
+
+# AMSTAR2
+
+.center[
+  .middle[
+![:scale 65%](figures/amstar2.png)
+]
+]
+
+---
+class: sydney-blue
+background-image: url(assets/USydLogo-white.svg)
+background-size: 260px
+background-position: 5% 95%
+
+# .white[Thank you!]
+
+.pull-right[.pull-down[
+Nicolai Sandau, MD <br>
+Centre for Evidence-Based Orthopedics, <br> 
+Dept. of Orthopedic Surgery, <br>
+Zealand University Hospital, <br>
+Denmark <br> <br>
+
+<a href="mailto:nicsa@regionsjaelland.dk">
+.white[`r fontawesome::fa("paper-plane")` nicsa@regionsjaelland.dk]
+</a>
+
+
+<br><br>
+
+]]
+

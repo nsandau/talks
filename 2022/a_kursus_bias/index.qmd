@@ -1,0 +1,117 @@
+---
+title: "Bias"
+author: Nicolai Sandau, PhD studerende
+institute: Ortopædkirurgisk afd., SUH
+format: 
+    revealjs:
+        theme: default
+        slide-number: true
+---
+
+
+## Hvad er bias?
+
+<br>
+
+- En systematisk fejl der fører til over- eller under-vurdering af en årsagssammenhæng 
+
+
+::: {.notes}
+Eksempel: Hvis blodtryksapparatet anvendt på kontrolgruppen er defekt og systematisk måler 20% lavere end det 'sande' blodtryk.
+:::
+
+
+## Cochrane risk of bias tool 
+![](figures/rob2.png){.absolute top=100 left=200}
+
+
+## Typer af bias
+
+* Selection bias
+* Performance & detection bias
+* Attrition bias
+* Reporting bias
+
+## Selection bias
+
+* Systematisk forskel i udvælgelsen af forsøgspersoner
+* Måder at begrænse risiko for selection bias:
+    * Randomisering
+    * Matching 
+    * Statistisk 
+
+::: {.notes}
+Eksempel: Vi har 2 kirurgiske interventioner. Vi giver systematisk den ene til yngre mennesker og den anden til ældre mennesker, og vil gerne sammenligne effekten.
+:::
+
+## ROB2: Selection bias
+
+* Was the allocation sequence random?
+* Was the allocation sequence concealed until participants were enrolled and assigned to interventions?
+* Did baseline differences between intervention groups suggest a problem with the randomization process?
+
+## Performance & detection bias
+
+* Hvis forsøgspersoner, behandlere, eller assessors har information om den tildelte intervention kan det føre til en systematisk ændret adfærd
+* Måder at begrænse risiko for performance og detection bias:
+    * Placebo
+    * Blinding / masking
+
+::: {.notes}
+Eksempel: nonoperativ vs kirurgi. Hvis ham der skal vurdere funktionelt outcome ved hvilken gruppe patienten var i kan det være han ubevidst overscorer kirurgi gruppen fordi han tænker det burde have en effekt. 
+Patienter opsøger intensiv fysioterapi da de føler der ikke er gjort noget. 
+:::
+
+## ROB2: Performance & detection bias
+
+* Were participants aware of their assigned intervention during the
+trial?
+* Were carers and people delivering the interventions aware of
+participants' assigned intervention during the trial?
+
+
+## Attrition bias 
+
+* Høj dropout rate eller systematisk forskel i dropouts mellem grupperne
+* Måder at begrænse og detektere risiko for attrition bias:
+    * Gøre det så nemt som muligt at være forsøgsperson
+        * Få og korte follow-ups, kompensation osv. 
+    * Registrere årsag til dropouts
+    * Sensitivitetsanalyser
+
+
+::: {.notes}
+Eksempel: 
+
+* Hvis medicinen giver mange bivirkninger -> større frafald i interventionsgruppen
+* Mange intensive follow-ups -> kan evt gøre at kun resourcestærke patienter bliver i forsøget
+:::
+
+## ROB2: Attrition bias
+* Were data available for all, or nearly all, participants randomized?
+* Are there any differences between intervention groups in the proportions of missing outcome data?
+
+
+## Selective reporting bias
+* Rapporterer kun udvalgte resultater 
+    * Ofte styret af p-værdier og/eller egne overbevisninger
+* Måder at begrænse risiko for selective reporting bias
+    * Registrere/publicere protocol og data-analyse plan
+    * Trial registration
+
+::: {.notes}
+Hvis forskerne har målt funktionelt outcome med 3 tools, men kun det ene viser en signifikant forskel, hvorfor de kun rapporterer det. 
+:::
+
+## ROB2: Reporting bias 
+* Were the data that produced this result analysed in accordance with
+a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?
+* Are the results likely to have been selected from...
+    * multiple eligible outcome measurements?
+    * multiple eligible analyses of the data?
+
+## Take-home message
+
+* En systematisk fejl der fører til over- eller under-vurdering af en årsagssammenhæng
+* Det randomiserede forsøg kontrollerer for systematiske forskelle mellem grupperne
+ 

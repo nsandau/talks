@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>index.knit</title>
+    <meta charset="utf-8" />
+    <script src="index_files/header-attrs-2.16/header-attrs.js"></script>
+    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } },
+      });
+    </script>
+    <style>
+    .mjx-mrow a {
+      color: black;
+      pointer-events: none;
+      cursor: default;
+    }
+    </style>
+    <link rel="stylesheet" href="assets/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+background-image: url("assets/ucph-logo-white-en.svg"), url("assets/suh-logo-white.png"), url("figures/forest_plot_example.png")
+background-position: 8% 90%, 32% 89%, 100% 50%
+background-size: 180px, 180px, 50% 100%
+background-color: #0148A4
+
+.pull-left[
+# .text-shadow[.white[Meta-analyser: Muligheder og begrænsninger]]
+
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+### .white[Nicolai Sandau]
+
+### .white[Centre for Evidence-Based Orthopedics]
+]
+
+---
+# Muligheder
+&lt;br&gt;
+
+* .Large[Kombinere resultater fra flere studier]
+* .Large[Øget sample size]
+  * .Large[Øget power] 
+  * .Large[Øget precision af effekt estimat]
+
+---
+
+.center[.middle[
+![:scale 75%](figures/ma_success_story.png)
+]]
+
+---
+
+# Hvordan beregnes en meta-analyse?
+
+* .Large[Vægtet gennemsnit af resultater]
+&lt;br&gt; &lt;br&gt;  
+
+
+$$estimat = \frac{resultat1 \times w1 + resultat2 \times w2}{w1 + w2} $$
+
+
+* .Large[Vægt beregnes ved inverse-variance]
+&lt;br&gt;
+`$$w = \frac{1}{SE^2}$$` 
+
+
+---
+
+
+# Udfordringer og begrænsninger
+
+&lt;br&gt;
+&lt;br&gt;
+
+.pull-left[
+   ![](figures/du_2017_concl.png)]
+  
+  .pull-right[
+    ![](figures/beks_concl.png)
+  ]
+
+
+---
+# Publicerede meta-analyser
+.center[.middle[
+![:scale 45%](figures/s1_publ.png)
+]]
+
+---
+# Rapporterede konklusioner
+
+.center[.middle[
+![:scale 50%](figures/s1_concl.png)
+]]
+
+---
+
+# Udfordringer og begrænsninger
+
+&lt;br&gt;
+
+* .Large[Risk of bias]
+* .Large[Heterogenitet]
+* .Large[Analytisk frihed]
+
+---
+
+# Risk of bias 
+
+.center[![:scale 30%](figures/rob.png)]
+
+
+---
+
+# Heterogenitet
+* .Large[Sammenligneligheden af de inkluderede studier]
+  * Forskelle i patienter, interventioner, outcomes, kirurgisk erfaring, genoptræning osv. ?
+  * Forskelle i studietyper (RCT vs observationelle studier)
+* .Large[Kan estimeres og til dels korrigeres statistisk]
+
+.center[.middle[
+![:scale 65%](figures/table1.png)
+]
+]
+
+
+---
+# Analytisk frihed
+
+.pull-left[
+* .large[Hvilke patienter?]
+  * Alder?
+  * Frakturtype?
+* .large[Hvilke interventioner og comparators?]
+  * ORIF vs non-operativt?
+  * ORIF + artroplastik vs non-operativ?
+]
+
+.pull-right[
+* .large[Hvilke outcomes?]
+  * Funktionelt outcome? 
+  * Quality of life?
+  * Adverse events?
+  * Hvor lang tids follow-up?
+* .large[Hvilke type af studier?]
+  * Kun RCTs?
+  * RCTs + observationelle?
+]
+---
+
+&lt;br&gt;
+
+.center[
+![:scale 50%](figures/voe.png)
+]
+
+---
+
+&lt;br&gt;
+
+.center[
+![:scale 85%](figures/voe_func.png)
+]
+
+---
+
+# AMSTAR2
+
+.center[
+  .middle[
+![:scale 65%](figures/amstar2.png)
+]
+]
+
+---
+class: sydney-blue
+background-image: url(assets/USydLogo-white.svg)
+background-size: 260px
+background-position: 5% 95%
+
+# .white[Thank you!]
+
+.pull-right[.pull-down[
+Nicolai Sandau, MD &lt;br&gt;
+Centre for Evidence-Based Orthopedics, &lt;br&gt; 
+Dept. of Orthopedic Surgery, &lt;br&gt;
+Zealand University Hospital, &lt;br&gt;
+Denmark &lt;br&gt; &lt;br&gt;
+
+&lt;a href="mailto:nicsa@regionsjaelland.dk"&gt;
+.white[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg> nicsa@regionsjaelland.dk]
+&lt;/a&gt;
+
+
+&lt;br&gt;&lt;br&gt;
+
+]]
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="assets/img_scale.js"></script>
+<script src="assets/remark-zoom.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"navigation": {
+"scroll": false
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

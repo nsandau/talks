@@ -1,0 +1,19 @@
+* .Large[Risk of bias]
+  * Rapporterer de risk of bias vurderinger?
+  * Hvilket tool har de benyttet? 
+  * Tager de højde for risk of bias i deres diskussion/konklusion?
+* .Large[Heterogenitet]
+  * Har de rapporteret studie karakteristika? 
+  * Har de vurderet og diskuteret heterogenitet?
+* .Large[Analytisk frihed]
+  * Har de udarbejdet en protokol?
+  * Hvor detaljeret er protokollen?
+
+
+<br> <br>
+
+.center[.middle[
+![:scale 80%](figures/forest_plot_example.png)
+]]
+
+---

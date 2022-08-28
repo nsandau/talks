@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Talk</title>
+    <meta charset="utf-8" />
+    <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
+    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } },
+      });
+    </script>
+    <style>
+    .mjx-mrow a {
+      color: black;
+      pointer-events: none;
+      cursor: default;
+    }
+    </style>
+    <link rel="stylesheet" href="assets/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+background-image: url("assets/ucph-logo-white-en.svg"), url("assets/suh-white-en.svg"), url("assets/phf.jpeg")
+background-position: 8% 90%, 32% 90%, 100% 50%
+background-size: 180px, 180px, 50% 100%
+background-color: #0148A4
+
+.pull-left[
+# .text-shadow[.white[Assessing the assumptions and results of network meta-analyses comparing treatments for proximal humerus fractures]]
+### .white[.small[Nicolai Sandau, BSc MD]]
+
+]
+
+---
+# Background
+.center[
+.middle[
+![:scale 65%](figures/neer.png)
+]
+]
+
+???
+- osteoporosis pathognomic 
+- high incidence
+- predominantly in women
+
+---
+# Background
+.center[
+.middle[
+  &lt;br&gt;
+![:scale 85%](figures/phf_interventions.png)
+]
+]
+
+???
+* 4 interventions generally used (3 surgical one non-operative)
+* Lack of consensus
+* Large geographical differences in usage -&gt; us study
+* PHILOS often used in younger patients with less complicated fractures
+
+---
+# Background
+
+.center[
+  ![:scale 70%](figures/cochrane_titlepage.png)
+  ]
+
+.center[
+  ![:scale 90%](figures/cochrane_conclusions.png)
+  ]
+
+
+???
+Stigs review concludes no benefit of surgery. 
+and not enough evidence to rank interventions.  
+
+---
+# Background
+.center[
+.middle[
+![:scale 100%](figures/s1_title.png)
+]]
+
+???
+
+In the first study we identified 2 NMA's reporting conclusions in favor of RSA, despite using the same trials as in the Cochrane review. 
+Despite only 8 available RCTs and only one of these (n = 61) comparing RSA with another intervention. 
+
+---
+# Background
+.center[
+.middle[
+Chen et al. 2016
+
+  ![:scale 80%](figures/chen_2016_concl.png)
+
+Du et al 2017
+
+   ![:scale 60%](figures/du_2017_concl.png)
+]
+]
+---
+# Background
+
+.center[
+.middle[
+Orman et al. 2020
+
+   ![](figures/orman_2020_concl.png)
+
+  &lt;br&gt;
+Davey et al. 2021  
+ .pull-left[
+  ![:scale 100%](figures/davey discuss.png)
+ ]
+ .pull-right[
+  ![:scale 100%](figures/davey_2021_concl.png)]
+
+]
+]
+
+---
+# Aim
+
+&lt;br&gt;
+.Large[
+* To assess whether network meta-analyses comparing interventions for proximal humerus fractures provide trustworthy estimates of intervention effects and ranking of interventions.]
+
+
+???
+* systematic search
+---
+# Methods
+.Large[
+* Core assumptions
+   * Transitivity and coherence 
+* Confidence in results
+   * Critical appraisal of methods
+   * CINeMA
+]
+
+---
+# Methods: Transitivity 
+
+.center[
+.middle[
+   ![:scale 60%](figures/du_netgraph.png)
+]
+]
+
+???
+
+* Potential effect modifiers should be evenly distributed among treatment comparisons. 
+
+Potential effect modifiers: 
+* Age 
+* Gender
+* Fracture severity
+
+---
+# Methods: Coherence
+
+* Node splitting
+
+.center[
+.middle[
+   ![:scale 60%](figures/node splitting.png)
+]
+]
+
+* Design-by-treatment interaction test
+
+???
+
+* Low power 
+* Local approach requires both direct and indirect evidence
+
+---
+# Methods: Critical appraisal of methodology
+
+.center[
+.middle[
+   ![](figures/leighton.png)
+]
+]
+
+---
+# Methods: Critical appraisal of methodology
+
+.center[
+.middle[
+   ![:scale 50%](figures/leighton_commentary.png)
+]
+]
+
+---
+# Methods: CINeMA
+&lt;br&gt;
+.center[
+.middle[
+   ![:scale 80%](figures/cinema_titlepage.png)
+]
+]
+
+???
+
+* within-study risk of bias
+* reporting bias 
+* indirectness
+* imprecision
+* heterogeneity 
+* incoherence
+
+---
+# Methods: CINeMA
+.center[
+.middle[
+   ![:scale 80%](figures/rob_contrib.png)
+]
+]
+
+---
+# Methods: CINeMA
+.center[
+.middle[
+   ![](figures/cinema_result.png)
+]
+]
+
+???
+* Imprecision: if CI overlaps MCID zone in both directions
+* Heterogeneity: Differences in CI vs prediction intervals
+
+---
+# Talking points 
+
+.Large[
+* Alternative approaches?
+* Other tools / frameworks? 
+* Other methodological issues to consider?
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="assets/img_scale.js"></script>
+<script src="assets/remark-zoom.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"navigation": {
+"scroll": false
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

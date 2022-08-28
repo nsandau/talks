@@ -1,0 +1,248 @@
+---
+title: "Talk"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/fonts.css", "assets/custom.css"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: false # show a title slide with YAML information
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"
+    nature:
+      beforeInit: ["assets/img_scale.js", "assets/remark-zoom.js"]
+      highlightStyle: "github"
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+---
+
+```{r, load_refs, echo=FALSE, cache=FALSE, message=FALSE}
+
+# xaringan::inf_mr("index.rmd")
+```
+
+class: title-slide
+background-image: url("assets/ucph-logo-white-en.svg"), url("assets/suh-white-en.svg"), url("assets/phf.jpeg")
+background-position: 8% 90%, 32% 90%, 100% 50%
+background-size: 180px, 180px, 50% 100%
+background-color: #0148A4
+
+.pull-left[
+# .text-shadow[.white[Assessing the assumptions and results of network meta-analyses comparing treatments for proximal humerus fractures]]
+### .white[.small[Nicolai Sandau, BSc MD]]
+
+]
+
+---
+# Background
+.center[
+.middle[
+![:scale 65%](figures/neer.png)
+]
+]
+
+::: {.notes}
+- osteoporosis pathognomic 
+- high incidence
+- predominantly in women
+:::
+
+---
+# Background
+.center[
+.middle[
+  <br>
+![:scale 85%](figures/phf_interventions.png)
+]
+]
+
+::: {.notes}
+* 4 interventions generally used (3 surgical one non-operative)
+* Lack of consensus
+* Large geographical differences in usage -> us study
+* PHILOS often used in younger patients with less complicated fractures
+:::
+
+
+---
+# Background
+
+.center[
+  ![:scale 70%](figures/cochrane_titlepage.png)
+  ]
+
+.center[
+  ![:scale 90%](figures/cochrane_conclusions.png)
+  ]
+
+
+::: {.notes}
+Stigs review concludes no benefit of surgery. 
+and not enough evidence to rank interventions.  
+:::
+---
+# Background
+.center[
+.middle[
+![:scale 100%](figures/s1_title.png)
+]]
+
+::: {.notes}
+In the first study we identified 2 NMA's reporting conclusions in favor of RSA, despite using the same trials as in the Cochrane review. 
+Despite only 8 available RCTs and only one of these (n = 61) comparing RSA with another intervention. 
+:::
+---
+# Background
+.center[
+.middle[
+Chen et al. 2016
+
+  ![:scale 80%](figures/chen_2016_concl.png)
+
+Du et al 2017
+
+   ![:scale 60%](figures/du_2017_concl.png)
+]
+]
+---
+# Background
+
+.center[
+.middle[
+Orman et al. 2020
+
+   ![](figures/orman_2020_concl.png)
+
+  <br>
+Davey et al. 2021  
+ .pull-left[
+  ![:scale 100%](figures/davey discuss.png)
+ ]
+ .pull-right[
+  ![:scale 100%](figures/davey_2021_concl.png)]
+
+]
+]
+
+---
+# Aim
+
+<br>
+.Large[
+* To assess whether network meta-analyses comparing interventions for proximal humerus fractures provide trustworthy estimates of intervention effects and ranking of interventions.]
+
+
+---
+# Methods
+.Large[
+* Core assumptions
+   * Transitivity and coherence 
+* Confidence in results
+   * Critical appraisal of methods
+   * CINeMA
+]
+
+---
+# Methods: Transitivity 
+
+.center[
+.middle[
+   ![:scale 60%](figures/du_netgraph.png)
+]
+]
+
+::: {.notes}
+
+* Potential effect modifiers should be evenly distributed among treatment comparisons. 
+
+Potential effect modifiers: 
+* Age 
+* Gender
+* Fracture severity
+:::
+
+---
+# Methods: Coherence
+
+* Node splitting
+
+.center[
+.middle[
+   ![:scale 60%](figures/node splitting.png)
+]
+]
+
+* Design-by-treatment interaction test
+
+::: {.notes}
+* Low power 
+* Local approach requires both direct and indirect evidence
+:::
+
+---
+# Methods: Critical appraisal of methodology
+
+.center[
+.middle[
+   ![](figures/leighton.png)
+]
+]
+
+---
+# Methods: Critical appraisal of methodology
+
+.center[
+.middle[
+   ![:scale 50%](figures/leighton_commentary.png)
+]
+]
+
+---
+# Methods: CINeMA
+<br>
+.center[
+.middle[
+   ![:scale 80%](figures/cinema_titlepage.png)
+]
+]
+
+::: {.notes}
+
+* within-study risk of bias
+* reporting bias 
+* indirectness
+* imprecision
+* heterogeneity 
+* incoherence
+
+:::
+---
+# Methods: CINeMA
+.center[
+.middle[
+   ![:scale 80%](figures/rob_contrib.png)
+]
+]
+
+---
+# Methods: CINeMA
+.center[
+.middle[
+   ![](figures/cinema_result.png)
+]
+]
+
+::: {.notes}
+* Imprecision: if CI overlaps MCID zone in both directions
+* Heterogeneity: Differences in CI vs prediction intervals
+:::
+
+---
+# Talking points 
+
+.Large[
+* Alternative approaches?
+* Other tools / frameworks? 
+* Other methodological issues to consider?
+]
